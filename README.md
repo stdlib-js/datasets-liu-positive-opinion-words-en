@@ -258,19 +258,19 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[umd]: https://github.com/umdjs/umd
-[es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
-
-[deno-url]: https://github.com/stdlib-js/datasets-liu-positive-opinion-words-en/tree/deno
-[umd-url]: https://github.com/stdlib-js/datasets-liu-positive-opinion-words-en/tree/umd
-[esm-url]: https://github.com/stdlib-js/datasets-liu-positive-opinion-words-en/tree/esm
-
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
+
+[umd]: https://github.com/umdjs/umd
+[es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+
+[deno-url]: https://github.com/stdlib-js/datasets-liu-positive-opinion-words-en/tree/deno
+[umd-url]: https://github.com/stdlib-js/datasets-liu-positive-opinion-words-en/tree/umd
+[esm-url]: https://github.com/stdlib-js/datasets-liu-positive-opinion-words-en/tree/esm
 
 [sentiment-lexicon]: http://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#lexicon
 

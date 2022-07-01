@@ -24,32 +24,30 @@ limitations under the License.
 
 > A [list][sentiment-lexicon] of positive opinion words.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/datasets-liu-positive-opinion-words-en
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-words = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-liu-positive-opinion-words-en@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-liu-positive-opinion-words-en@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.words;
-})();
-</script>
+var words = require( '@stdlib/datasets-liu-positive-opinion-words-en' );
 ```
 
 #### words()
@@ -100,15 +98,10 @@ var list = words();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-liu-positive-opinion-words-en@umd/bundle.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var floor = require( '@stdlib/math-base-special-floor' );
+var randu = require( '@stdlib/random-base-randu' );
+var words = require( '@stdlib/datasets-liu-positive-opinion-words-en' );
 
 var list = words();
 var len = list.length;
@@ -120,18 +113,69 @@ for ( i = 0; i < 100; i++ ) {
     idx = floor( randu()*len );
     console.log( list[ idx ] );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use the module as a general utility, install the module globally
+
+```bash
+npm install -g @stdlib/datasets-liu-positive-opinion-words-en
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: liu-positive-opinion-words-en [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ liu-positive-opinion-words-en
+a+
+abound
+abounds
+abundance
+...
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 * * *
 
@@ -229,6 +273,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/datasets-liu-positive-opinion-words-en/tree/deno
 [umd-url]: https://github.com/stdlib-js/datasets-liu-positive-opinion-words-en/tree/umd
 [esm-url]: https://github.com/stdlib-js/datasets-liu-positive-opinion-words-en/tree/esm
+[branches-url]: https://github.com/stdlib-js/datasets-liu-positive-opinion-words-en/blob/main/branches.md
 
 [sentiment-lexicon]: http://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#lexicon
 
@@ -244,7 +289,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/datasets/liu-negative-opinion-words-en]: https://github.com/stdlib-js/datasets-liu-negative-opinion-words-en/tree/umd
+[@stdlib/datasets/liu-negative-opinion-words-en]: https://github.com/stdlib-js/datasets-liu-negative-opinion-words-en
 
 <!-- </related-links> -->
 

@@ -37,6 +37,7 @@ Alternatively,
 -   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
 -   If you are using Deno, visit the [`deno` branch][deno-url].
 -   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
 The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
@@ -129,10 +130,10 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Installation
 
-To use the module as a general utility, install the module globally
+To use as a general utility, install the CLI package globally
 
 ```bash
-npm install -g @stdlib/datasets-liu-positive-opinion-words-en
+npm install -g @stdlib/datasets-liu-positive-opinion-words-en-cli
 ```
 
 </section>
@@ -207,7 +208,7 @@ The data files (databases) are licensed under an [Open Data Commons Attribution 
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/datasets/liu-negative-opinion-words-en`][@stdlib/datasets/liu-negative-opinion-words-en]</span><span class="delimiter">: </span><span class="description">A list of negative opinion words.</span>
+-   <span class="package-name">[`@stdlib/datasets-liu-negative-opinion-words-en`][@stdlib/datasets/liu-negative-opinion-words-en]</span><span class="delimiter">: </span><span class="description">A list of negative opinion words.</span>
 
 </section>
 
@@ -266,6 +267,10 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [stdlib]: https://github.com/stdlib-js/stdlib
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
+
+[cli-section]: https://github.com/stdlib-js/datasets-liu-positive-opinion-words-en#cli
+[cli-url]: https://github.com/stdlib-js/datasets-liu-positive-opinion-words-en/tree/cli
+[@stdlib/datasets-liu-positive-opinion-words-en]: https://github.com/stdlib-js/datasets-liu-positive-opinion-words-en/tree/main
 
 [umd]: https://github.com/umdjs/umd
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules

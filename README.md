@@ -35,107 +35,19 @@ limitations under the License.
 
 > A [list][sentiment-lexicon] of positive opinion words.
 
-<section class="installation">
 
-## Installation
 
-```bash
-npm install @stdlib/datasets-liu-positive-opinion-words-en
-```
 
-Alternatively,
 
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
--   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
-</section>
 
-<section class="usage">
 
-## Usage
 
-```javascript
-var words = require( '@stdlib/datasets-liu-positive-opinion-words-en' );
-```
-
-#### words()
-
-Returns a [list][sentiment-lexicon] of positive opinion words.
-
-```javascript
-var list = words();
-/* returns
-    [
-        'a+',
-        'abound',
-        'abounds',
-        'abundance',
-        'abundant',
-        'accessable',
-        'accessible',
-        'acclaim',
-        'acclaimed',
-        'acclamation',
-        'accolade',
-        'accolades',
-        ...
-    ]
-*/
-```
-
-</section>
-
-<!-- /.usage -->
-
-<section class="notes">
-
-## Notes
-
--   A word's appearance in a sentence does **not** necessarily imply a positive or negative opinion. See [Liu (2010)](#references).
--   The list includes misspelled words. Their presence is intentional, as such misspellings frequently occur in social media content.
-
-</section>
-
-<!-- /.notes -->
-
-<section class="examples">
-
-<!-- TODO: more creative example; possibly counting the number of positive words per sentence in two pieces of text. -->
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var floor = require( '@stdlib/math-base-special-floor' );
-var randu = require( '@stdlib/random-base-randu' );
-var words = require( '@stdlib/datasets-liu-positive-opinion-words-en' );
-
-var list = words();
-var len = list.length;
-var idx;
-var i;
-
-// Select random words from the list...
-for ( i = 0; i < 100; i++ ) {
-    idx = floor( randu()*len );
-    console.log( list[ idx ] );
-}
-```
-
-</section>
-
-<!-- /.examples -->
-
-* * *
 
 <section class="cli">
 
-## CLI
+
 
 <section class="installation">
 
@@ -153,7 +65,7 @@ npm install -g @stdlib/datasets-liu-positive-opinion-words-en-cli
 
 <section class="usage">
 
-### Usage
+## Usage
 
 ```text
 Usage: liu-positive-opinion-words-en [options]
@@ -170,7 +82,7 @@ Options:
 
 <section class="examples">
 
-### Examples
+## Examples
 
 ```bash
 $ liu-positive-opinion-words-en
@@ -215,10 +127,9 @@ The data files (databases) are licensed under an [Open Data Commons Attribution 
 
 <section class="related">
 
-* * *
-
 ## See Also
 
+-   <span class="package-name">[`@stdlib/datasets-liu-positive-opinion-words-en`][@stdlib/datasets-liu-positive-opinion-words-en]</span><span class="delimiter">: </span><span class="description">a list of positive opinion words.</span>
 -   <span class="package-name">[`@stdlib/datasets-liu-negative-opinion-words-en`][@stdlib/datasets/liu-negative-opinion-words-en]</span><span class="delimiter">: </span><span class="description">A list of negative opinion words.</span>
 
 </section>
@@ -238,7 +149,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-#### Community
+### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -256,8 +167,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/datasets-liu-positive-opinion-words-en.svg
-[npm-url]: https://npmjs.org/package/@stdlib/datasets-liu-positive-opinion-words-en
+[npm-image]: http://img.shields.io/npm/v/@stdlib/datasets-liu-positive-opinion-words-en-cli.svg
+[npm-url]: https://npmjs.org/package/@stdlib/datasets-liu-positive-opinion-words-en-cli
 
 [test-image]: https://github.com/stdlib-js/datasets-liu-positive-opinion-words-en/actions/workflows/test.yml/badge.svg?branch=main
 [test-url]: https://github.com/stdlib-js/datasets-liu-positive-opinion-words-en/actions/workflows/test.yml?query=branch:main

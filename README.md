@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import words from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-liu-positive-opinion-words-en@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/datasets-liu-positive-opinion-words-en/tags). For example,
+
+```javascript
 import words from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-liu-positive-opinion-words-en@v0.2.0-esm/index.mjs';
 ```
 
@@ -101,7 +106,7 @@ var list = words();
 
 import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@esm/index.mjs';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import words from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-liu-positive-opinion-words-en@v0.2.0-esm/index.mjs';
+import words from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-liu-positive-opinion-words-en@esm/index.mjs';
 
 var list = words();
 var len = list.length;
